@@ -4,11 +4,11 @@ Some useless, full-stack project, just to play with NodeJS, RxJS, server-side re
 What this application will do? I'm not sure yet, I'm thinking about getting some stock data from few public API's (e.g. Bloomberg), mixing it with managable content from application database and presenting it via React/Redux application.
 
 
-Current progress: ~3%
+Current progress: ~5%
 
 For now there's nothing interesting, but I can share what I'm willing to do:
 1. Hello world - init NodeJS server with Express framework :white_check_mark:
-2. Hello world 2 - init React/Redux frontend application
+2. Hello world 2 - init React/Redux frontend application :white_check_mark:
 3. Server-side rendering for frontend application
 4. First REST service, downloading data from some public API, adjusting it and serving to frontend application
 5. Some data presentation in frontend
