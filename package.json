@@ -1,6 +1,6 @@
 {
   "name": "node-playground",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Some useless, full-stack project, just to play with NodeJS, RxJS, server-side rendering and React :)",
   "main": "server/src/app.js",
   "scripts": {
