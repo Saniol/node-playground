@@ -8,11 +8,20 @@ export const setMsg = msg => ({
     msg,
 });
 
-export const loadData = () => (dispatch) => {
+export const setLoaded = () => ({
+    type: 'HOME_SET_LOADED',
+});
+
+export const reset = () => ({
+    type: 'HOME_RESET',
+});
+
+export const loadData = () => dispatch => (
     fetch(`${App.serverPath}/sample`)
             .then(response => response.json())
             .then((jsonData) => {
                 dispatch(setTitle(jsonData.title));
                 dispatch(setMsg(jsonData.msg));
-            });
-};
+                dispatch(setLoaded());
+            })
+);

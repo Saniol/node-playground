@@ -3,14 +3,14 @@ const path = require('path');
 module.exports = {
     entry: {
         app: [
-            path.join(__dirname, '/webapp/src/index.js'),
+            path.join(__dirname, '/src/webapp/index.js'),
         ],
         // test: [
         //     path.join(__dirname, '/webapp/test/index.js'),
         // ],
     },
     output: {
-        path: path.join(__dirname, './webapp/dist'),
+        path: path.join(__dirname, './src/public/dist'),
         filename: 'bundle-[name].js',
     },
     devtool: 'inline-source-map',
