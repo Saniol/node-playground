@@ -1,3 +1,4 @@
+import CurrencyController from '../controllers/currency';
 
 export default (app) => {
     app.get('/api', (req, res) => {
@@ -10,4 +11,8 @@ export default (app) => {
             msg: 'Hello world 2!',
         });
     });
+
+    app.get('/api/euro', (req, res) => CurrencyController.getEuroData()
+            .then(result => res.json(result))
+    );
 };
